@@ -3,87 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Health | Advanced Biosync Analytics</title>
+    <meta name="description" content="Aura Health is a premium mobile app for tracking blood pressure, monitoring weight goals, and generating professional health reports.">
+    <title>Aura Health | Advanced Blood Pressure & Weight Tracker</title>
+    
     <style>
+        :root {
+            --primary-teal: #008080;
+            --primary-dark: #005959;
+            --gold: #D4AF37;
+            --coffee: #4B3621;
+            --bg-vintage: #FDFBF7;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #FDFBF7; /* Aura Vintage Background */
-            color: #4B3621; /* Aura Coffee */
+            background-color: var(--bg-vintage);
+            color: var(--coffee);
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 20px 5vw;
             background-color: #ffffff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        .logo { font-size: 1.5rem; font-weight: bold; color: #008080; /* Teal */ }
-        .login-btn {
-            background-color: #008080;
-            color: white;
-            padding: 10px 24px;
-            text-decoration: none;
-            border-radius: 20px;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-        .login-btn:hover { background-color: #006666; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--primary-teal); letter-spacing: -0.5px; }
+
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #FDFBF7 0%, #f0ebd8 100%);
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--bg-vintage) 0%, #f0ebd8 100%);
         }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; color: #4B3621; }
-        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px auto; color: #666; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: var(--coffee); line-height: 1.1; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto; color: #555; }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary-teal);
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+        .btn-primary:hover { 
+            background-color: var(--primary-dark); 
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
         .features {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            padding: 60px 20px;
+            gap: 30px;
+            padding: 80px 5vw;
             flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .feature-card {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 40px 30px;
+            border-radius: 20px;
             width: 300px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
             text-align: center;
+            flex: 1;
+            min-width: 280px;
         }
-        .feature-card h3 { color: #D4AF37; /* Mustard/Gold */ }
+        .feature-card h2 { color: var(--gold); font-size: 1.5rem; margin-bottom: 15px; }
+        .feature-card p { color: #666; font-size: 1.05rem; }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .footer-links a, .footer-links button {
+            color: var(--primary-teal);
+            text-decoration: none;
+            font-weight: 600;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .footer-links a:hover, .footer-links button:hover { text-decoration: underline; }
+
+        /* Modal (Pop-up) Styling */
+        .modal-overlay {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+        .modal-box h3 { color: var(--coffee); margin-top: 0; font-size: 1.5rem; }
+        .modal-box p { font-size: 1.1rem; color: #555; }
+        .modal-box .email-text { font-weight: bold; color: var(--primary-teal); font-size: 1.2rem; display: block; margin: 15px 0; }
+        .close-btn {
+            background-color: #eee; color: #333; padding: 8px 20px; border: none;
+            border-radius: 20px; cursor: pointer; font-weight: 600; margin-top: 10px;
+        }
+        .close-btn:hover { background-color: #ddd; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo">Aura Health</div>
-        <a href="https://app.aurahealth.fit" class="login-btn">Login to Web App</a>
     </header>
 
-    <section class="hero">
-        <h1>Your Body's Dashboard.</h1>
-        <p>Aura Health is the premium, cross-platform companion for tracking your blood pressure, weight goals, and overall wellness trajectory.</p>
-        <a href="https://app.aurahealth.fit" class="login-btn" style="font-size: 1.1rem; padding: 15px 30px;">Access Your Dashboard</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Your Body's Dashboard.</h1>
+            <p>The premium iOS and Android companion for tracking your blood pressure, forecasting weight goals, and generating secure health reports.</p>
+            <button class="btn-primary" onclick="alert('The Aura Health app is currently in development for iOS and Android. Check back soon!')">
+                Download App (Coming Soon)
+            </button>
+        </section>
 
-    <section class="features">
-        <div class="feature-card">
-            <h3>Blood Pressure Hub</h3>
-            <p>Log systolic and diastolic trends over time with premium mood and context tagging.</p>
+        <section class="features">
+            <article class="feature-card">
+                <h2>Blood Pressure Hub</h2>
+                <p>Log systolic and diastolic trends over time. Add context to your readings with mood tracking, posture notes, and custom tagging.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Predictive Weight Goals</h2>
+                <p>Set dynamic targets, track your current BMI, and let our pacing algorithm estimate exactly when you will cross the finish line.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Doctor-Ready Exports</h2>
+                <p>Instantly generate beautifully formatted, secure PDF reports of your vital history to share directly with your healthcare provider.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/privacy.html">Privacy Policy</a>
+            <button onclick="openModal()">Contact Team</button>
         </div>
-        <div class="feature-card">
-            <h3>Weight & BMI Analytics</h3>
-            <p>Set dynamic goals, calculate real-time BMI, and let our predictive AI estimate your finish line.</p>
+        <p style="color: #888; font-size: 0.9rem;">&copy; 2026 Aura Health. All rights reserved.</p>
+    </footer>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Get in Touch</h3>
+            <p>Have questions or want early access? Reach out to us at:</p>
+            <span class="email-text">team.aurahealth@gmail.com</span>
+            <button class="close-btn" onclick="closeModal()">Close</button>
         </div>
-        <div class="feature-card">
-            <h3>Export & Share</h3>
-            <p>Generate secure, professional PDF reports to share directly with your healthcare provider.</p>
-        </div>
-    </section>
+    </div>
+
+    <script>
+        // Modal Logic
+        const modal = document.getElementById("contactModal");
+
+        function openModal() {
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close modal if user clicks outside the white box
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 
 </body>
 </html>
