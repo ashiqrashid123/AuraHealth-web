@@ -3,38 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Health | Coming Soon</title>
+    <title>Aura Health | Advanced Biosync Analytics</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #FDFBF7; /* Aura's soft vintage background */
-            color: #4B3621; /* Aura's Coffee color */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            background-color: #FDFBF7; /* Aura Vintage Background */
+            color: #4B3621; /* Aura Coffee */
             margin: 0;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #008080; /* Aura's Teal */
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 500px;
+            padding: 0;
             line-height: 1.6;
         }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #008080; /* Teal */ }
+        .login-btn {
+            background-color: #008080;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover { background-color: #006666; }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #FDFBF7 0%, #f0ebd8 100%);
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; color: #4B3621; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px auto; color: #666; }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .feature-card h3 { color: #D4AF37; /* Mustard/Gold */ }
     </style>
 </head>
 <body>
 
-    <h1>Aura Health</h1>
-    <p>Your premium companion for tracking blood pressure, weight, and overall wellness. The web dashboard is currently under construction.</p>
-    <p><strong>Coming Soon.</strong></p>
+    <header>
+        <div class="logo">Aura Health</div>
+        <a href="https://app.aurahealth.fit" class="login-btn">Login to Web App</a>
+    </header>
+
+    <section class="hero">
+        <h1>Your Body's Dashboard.</h1>
+        <p>Aura Health is the premium, cross-platform companion for tracking your blood pressure, weight goals, and overall wellness trajectory.</p>
+        <a href="https://app.aurahealth.fit" class="login-btn" style="font-size: 1.1rem; padding: 15px 30px;">Access Your Dashboard</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Blood Pressure Hub</h3>
+            <p>Log systolic and diastolic trends over time with premium mood and context tagging.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Weight & BMI Analytics</h3>
+            <p>Set dynamic goals, calculate real-time BMI, and let our predictive AI estimate your finish line.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Export & Share</h3>
+            <p>Generate secure, professional PDF reports to share directly with your healthcare provider.</p>
+        </div>
+    </section>
 
 </body>
 </html>
