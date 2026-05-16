@@ -1,7 +1,7 @@
 :root {
     --color-terracotta: #C75B39; /* Warm terracotta brown */
     --color-peach: #F5C6AA; /* Soft peach neutral */
-    --color-charcoal: #2C1E1E; /* Deep charcoal */
+    --color-charcoal: #1C1C1E; /* Rich deep charcoal */
     --color-eucalyptus: #6B8E23; /* Eucalyptus green */
     --bg-color: #FDFBF7; /* Light subtle background */
     --text-color: var(--color-charcoal);
@@ -60,12 +60,15 @@ header {
 
 /* Hero Section */
 .hero-section {
-    padding: 100px 0;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at top, #FFF5F0, var(--bg-color));
+    background: radial-gradient(circle at top left, rgba(245, 198, 170, 0.15), transparent 40%),
+                radial-gradient(circle at top right, rgba(199, 91, 57, 0.1), transparent 40%),
+                radial-gradient(circle at bottom, rgba(245, 198, 170, 0.1), transparent 50%),
+                var(--bg-color);
 }
 
 .hero-content {
@@ -89,7 +92,7 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.7;
+    line-height: 1.85; /* Increased for better readability */
 }
 
 .cta-buttons {
@@ -133,14 +136,23 @@ header {
 .hero-visual {
     width: 100%;
     max-width: 600px;
-    margin-top: 50px;
+    margin-top: 60px;
+}
+
+.phone-frame {
+    background: #ffffff;
+    border-radius: 44px;
+    padding: 14px;
+    box-shadow: 0 40px 80px rgba(44, 30, 30, 0.06), 0 10px 30px rgba(44, 30, 30, 0.04);
+    border: 1px solid rgba(44, 30, 30, 0.08);
+    display: inline-block;
 }
 
 .hero-visual img {
     width: 100%;
     height: auto;
-    border-radius: 24px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    border-radius: 32px;
+    display: block;
 }
 
 /* Features Section */
