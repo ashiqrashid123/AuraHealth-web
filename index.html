@@ -14,28 +14,71 @@
 </head>
 <body>
 
+    <nav class="top-nav">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <div class="logo-circle"></div>
+          Aura Health
+        </a>
+      </div>
+    </nav>
+
     <header id="hero" class="hero-section">
-  <div class="container hero-content">
-    <h1>Master Your Health. Visualize Your Progress.</h1>
-    <p>Aura Health is your premium companion for tracking vitals, monitoring goals, and generating doctor-ready reports. Simple, secure, and smart.</p>
-    <div class="cta-buttons">
-      <a href="#" class="app-store-btn ios">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="store-icon">
-          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
-        </svg>
-        Download for iOS
-      </a>
-      <a href="#" class="app-store-btn android">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="store-icon">
-          <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
-        </svg>
-        Download for Android
-      </a>
+  <div class="container">
+    <div class="hero-text-col">
+      <h1>Elevate Your Health Intelligence.</h1>
+      <p>Aura Health is the definitive daily companion for tracking vitals, mastering hydration, and generating doctor-ready reports. Built for high performers.</p>
+      <div class="cta-buttons">
+        <a href="https://apps.apple.com/us/app/aura-fit-health/id6768627273" class="app-store-btn ios">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="store-icon">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+          </svg>
+          Download for iOS
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.synapsefitapp" class="app-store-btn android">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="store-icon">
+            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
+          </svg>
+          Download for Android
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="hero-visual">
-    <div class="phone-frame">
-      <img src="app_mockup.png" alt="Aura Health App Mockup">
+    <div class="hero-visual-col">
+      <div class="css-device-frame">
+        <div class="css-device-notch"></div>
+        <div class="css-device-screen">
+          <div class="dashboard-greeting">Good Morning, Sarah ☀️</div>
+          
+          <div class="dashboard-goal-widget">
+            <svg class="progress-ring" width="120" height="120">
+              <circle class="progress-ring__background" cx="60" cy="60" r="50" fill="transparent" stroke="#EAE2D9" stroke-width="8"/>
+              <circle class="progress-ring__circle" cx="60" cy="60" r="50" fill="transparent" stroke="var(--color-terracotta)" stroke-width="8" stroke-dasharray="314.16" stroke-dashoffset="0"/>
+            </svg>
+            <div class="goal-text">
+              <span class="goal-percentage">100%</span>
+              <span class="goal-label">Daily Goal Reached!</span>
+            </div>
+          </div>
+          
+          <div class="dashboard-metrics">
+            <div class="metric-card streak-card">
+              <span class="metric-icon">🔥</span>
+              <div class="metric-info">
+                <span class="metric-title">7-Day Streak</span>
+                <span class="metric-subtitle">Consistent tracking</span>
+              </div>
+            </div>
+            
+            <div class="metric-card vitals-card">
+              <span class="metric-icon">❤️</span>
+              <div class="metric-info">
+                <span class="metric-title">Vitals: Optimal</span>
+                <span class="metric-subtitle">BP & Weight normal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -63,9 +106,60 @@
         <p>Instantly export secure, beautifully formatted summaries for your medical provider. Bridge the gap between home and clinic.</p>
         <div class="widget pdf-widget">[PDF Download Icon]</div>
       </article>
+      <article class="feature-card">
+        <img src="assets/water_glass.png" alt="Glass of water" class="card-image">
+        <h3>Smart Hydration Analytics</h3>
+        <p>Track daily fluid intake, set custom goals, and view beautiful historical trends to keep your body optimized.</p>
+        <div class="widget water-widget">[Water Intake Tracker]</div>
+      </article>
     </div>
   </div>
 </section>
+
+        <section class="hero-network">
+          <div class="container network-container">
+            <div class="network-content">
+              <h2 class="network-title">The Aura Blood Network</h2>
+              <p class="network-description">Your vitals are all connected. Aura Health intelligently maps the relationship between your hydration, weight, and blood pressure to give you the ultimate overview of your cardiovascular health.</p>
+            </div>
+            <div class="network-visual">
+              <div class="network-card">
+                <svg viewBox="0 0 400 400" class="network-svg">
+                  <defs>
+                    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="var(--color-peach)" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="var(--color-peach)" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  
+                  <circle cx="200" cy="200" r="100" fill="url(#glow)" class="pulse-glow" />
+                  
+                  <!-- Connection lines -->
+                  <line x1="200" y1="200" x2="200" y2="80" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
+                  <line x1="200" y1="200" x2="80" y2="280" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
+                  <line x1="200" y1="200" x2="320" y2="280" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
+                  
+                  <!-- Central Node: Aura Core -->
+                  <circle cx="200" cy="200" r="48" fill="var(--color-charcoal)" stroke="var(--color-peach)" stroke-width="2" />
+                  <text x="200" y="195" font-family="Inter" font-size="12" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.05em">AURA</text>
+                  <text x="200" y="212" font-family="Inter" font-size="9" font-weight="600" fill="var(--color-peach)" text-anchor="middle" letter-spacing="0.1em">CORE</text>
+                  
+                  <!-- Node 1: Hydration -->
+                  <circle cx="200" cy="80" r="32" fill="#EBF3FC" stroke="#4A90E2" stroke-width="2" />
+                  <text x="200" y="84" font-family="Inter" font-size="10" font-weight="700" fill="#1C3D5A" text-anchor="middle">Hydration</text>
+                  
+                  <!-- Node 2: Weight -->
+                  <circle cx="80" cy="280" r="32" fill="#F4F8EC" stroke="var(--color-eucalyptus)" stroke-width="2" />
+                  <text x="80" y="284" font-family="Inter" font-size="10" font-weight="700" fill="#2E4A1E" text-anchor="middle">Weight</text>
+                  
+                  <!-- Node 3: Blood Pressure -->
+                  <circle cx="320" cy="280" r="32" fill="#FDF3F2" stroke="var(--color-terracotta)" stroke-width="2" />
+                  <text x="320" y="284" font-family="Inter" font-size="10" font-weight="700" fill="var(--color-terracotta)" text-anchor="middle">Blood Pressure</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
 
     <footer class="site-footer">
