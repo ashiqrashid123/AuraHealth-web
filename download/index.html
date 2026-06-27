@@ -19,11 +19,67 @@
       })();
     </script>
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #FDF5E6; font-family: 'Inter', sans-serif; margin: 0; }
-        .download-card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; max-width: 400px; }
-        .download-card h1 { color: #0F172A; font-size: 24px; margin-bottom: 12px; }
-        .download-card p { color: #64748B; margin-bottom: 30px; line-height: 1.5; }
-        .btn-row { display: flex; flex-direction: column; gap: 16px; }
+      body { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        background-color: #0F0A0E; 
+        background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 24px 24px;
+        font-family: 'Inter', sans-serif; 
+        margin: 0; 
+      }
+      .download-card { 
+        background: #1E1B1A; 
+        padding: 48px 40px; 
+        border-radius: 24px; 
+        box-shadow: 0 25px 50px rgba(0,0,0,0.4); 
+        border: 1px solid rgba(255,255,255,0.05);
+        text-align: center; 
+        max-width: 400px; 
+      }
+      .download-card h1 { 
+        color: #F5F2F0; 
+        font-size: 28px; 
+        margin-bottom: 12px; 
+        margin-top: 0;
+      }
+      .download-card p { 
+        color: #A8A29E; 
+        margin-bottom: 32px; 
+        line-height: 1.6; 
+        font-size: 1.05rem;
+      }
+      .btn-row { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 16px; 
+      }
+      .app-store-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: opacity 0.2s, transform 0.2s;
+      }
+      .app-store-btn:hover {
+        transform: translateY(-2px);
+      }
+      .app-store-btn.ios {
+        background: #F5F2F0;
+        color: #0F0A0E;
+      }
+      .app-store-btn.android {
+        background: #252836;
+        color: #F5F2F0;
+        border: 1px solid rgba(255,255,255,0.1);
+      }
     </style>
 </head>
 <body>

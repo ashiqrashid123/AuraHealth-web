@@ -16,18 +16,42 @@
 
     <nav class="top-nav">
       <div class="container nav-container">
-        <a href="#" class="logo">
-          <div class="logo-circle"></div>
-          Aura Health
-        </a>
+        <div class="brand-logo">
+          <a href="#" class="logo">
+            <div class="logo-circle"></div>
+            Aura Health
+          </a>
+        </div>
       </div>
     </nav>
 
     <header id="hero" class="hero-section">
   <div class="container">
     <div class="hero-text-col">
+      <div class="pill-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.443.856 3.585a.75.75 0 0 1-1.12.813L8 12.147l-3.139 1.876a.75.75 0 0 1-1.12-.813l.856-3.585-2.791-2.443a.75.75 0 0 1 .428-1.317l3.664-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd"/>
+        </svg>
+        Premium Health Tracker
+      </div>
       <h1>Elevate Your Health Intelligence.</h1>
       <p>Aura Health is the definitive daily companion for tracking vitals, mastering hydration, and generating doctor-ready reports. Built for high performers.</p>
+      
+      <ul class="hero-feature-list">
+        <li>
+          <span class="list-icon">💧</span>
+          <span>Track daily water intake</span>
+        </li>
+        <li>
+          <span class="list-icon">⚖️</span>
+          <span>Dynamic BMI & weight calculations</span>
+        </li>
+        <li>
+          <span class="list-icon">📊</span>
+          <span>Generate secure doctor-ready reports</span>
+        </li>
+      </ul>
+
       <div class="cta-buttons">
         <a href="https://apps.apple.com/us/app/aura-fit-health/id6768627273" class="app-store-btn ios">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="store-icon">
@@ -84,90 +108,205 @@
 </header>
 
     <main>
-        <section id="features" class="features-section">
+<section id="features" class="features-section">
   <div class="container">
-    <h2 class="section-title">Core Capabilities</h2>
+    <div class="section-header">
+      <div class="pill-badge">🧠 Health Intelligence</div>
+      <h2 class="section-title">Engineered to Elevate Your Routine.</h2>
+      <p class="section-subtitle">Stunning micro-analytics and crisp logging tools right at your fingertips.</p>
+    </div>
+
     <div class="features-grid">
-      <article class="feature-card">
-        <img src="assets/weight_scale.png" alt="Person on scale" class="card-image">
-        <h3>Smart Weight Tracking</h3>
-        <p>Stay on top of your goals with dynamic BMI calculations and target pacing. Log trends and visualize progress effortlessly.</p>
-        <div class="widget weight-widget">[Weight Goal Tracker]</div>
+      <!-- CARD 1: WEIGHT GOALS -->
+      <article class="feature-card interactive-bento">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800" alt="Target Pacing">
+        </div>
+        <div class="card-content">
+          <div class="icon-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <h3>Target Weight Goals</h3>
+          </div>
+          <p>Establish baseline targets. Aura's adaptive pacing models calculate exact milestones to track your progress smoothly.</p>
+        </div>
       </article>
-      <article class="feature-card">
-        <img src="assets/bp_couple.png" alt="Couple using BP cuff" class="card-image">
-        <h3>Advanced BP Insights</h3>
-        <p>Log readings with context—notes, mood, and posture—for a complete picture. Understand your heart health better.</p>
-        <div class="widget notes-widget">[Notes Field]</div>
+
+      <!-- CARD 2: DAILY HYDRATION -->
+      <article class="feature-card interactive-bento">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&q=80&w=800" alt="Hydration Tracking">
+        </div>
+        <div class="card-content">
+          <div class="icon-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            <h3>Daily Hydration Circuits</h3>
+          </div>
+          <p>Set automated thresholds. Track water intake, pure extractions, and active beverage percentages smoothly in real time.</p>
+        </div>
       </article>
-      <article class="feature-card">
-        <img src="assets/provider_tablet.png" alt="Provider with tablet" class="card-image">
-        <h3>Doctor-Ready Reports</h3>
-        <p>Instantly export secure, beautifully formatted summaries for your medical provider. Bridge the gap between home and clinic.</p>
-        <div class="widget pdf-widget">[PDF Download Icon]</div>
+
+      <!-- CARD 3: COMPARATIVE ANALYTICS -->
+      <article class="feature-card interactive-bento wide-bento">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000" alt="Performance Comparison">
+        </div>
+        <div class="card-content">
+          <div class="icon-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            <h3>Comparative Micro-Trends</h3>
+          </div>
+          <p>Never query in isolation. Instantly benchmark current performance vectors directly against previous historical windows to isolate meaningful physical adaptations.</p>
+        </div>
       </article>
-      <article class="feature-card">
-        <img src="assets/water_glass.png" alt="Glass of water" class="card-image">
-        <h3>Smart Hydration Analytics</h3>
-        <p>Track daily fluid intake, set custom goals, and view beautiful historical trends to keep your body optimized.</p>
-        <div class="widget water-widget">[Water Intake Tracker]</div>
+
+      <!-- CARD 4: CLINICAL REPORTS -->
+      <article class="feature-card interactive-bento">
+        <div class="card-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800" alt="Doctor Exports">
+        </div>
+        <div class="card-content">
+          <div class="icon-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <h3>Physician-Ready Summaries</h3>
+          </div>
+          <p>Export beautifully arranged clinical briefs detailing structural changes, timeline logs, and tracking tags seamlessly.</p>
+        </div>
       </article>
     </div>
   </div>
 </section>
 
-        <section class="hero-network">
-          <div class="container network-container">
-            <div class="network-content">
-              <h2 class="network-title">The Aura Blood Network</h2>
-              <p class="network-description">Your vitals are all connected. Aura Health intelligently maps the relationship between your hydration, weight, and blood pressure to give you the ultimate overview of your cardiovascular health.</p>
-            </div>
-            <div class="network-visual">
-              <div class="network-card">
-                <svg viewBox="0 0 400 400" class="network-svg">
-                  <defs>
-                    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stop-color="var(--color-peach)" stop-opacity="0.3"/>
-                      <stop offset="100%" stop-color="var(--color-peach)" stop-opacity="0"/>
-                    </radialGradient>
-                  </defs>
-                  
-                  <circle cx="200" cy="200" r="100" fill="url(#glow)" class="pulse-glow" />
-                  
-                  <!-- Connection lines -->
-                  <line x1="200" y1="200" x2="200" y2="80" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
-                  <line x1="200" y1="200" x2="80" y2="280" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
-                  <line x1="200" y1="200" x2="320" y2="280" stroke="var(--color-terracotta)" stroke-width="2" stroke-dasharray="4,4" />
-                  
-                  <!-- Central Node: Aura Core -->
-                  <circle cx="200" cy="200" r="48" fill="var(--color-charcoal)" stroke="var(--color-peach)" stroke-width="2" />
-                  <text x="200" y="195" font-family="Inter" font-size="12" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0.05em">AURA</text>
-                  <text x="200" y="212" font-family="Inter" font-size="9" font-weight="600" fill="var(--color-peach)" text-anchor="middle" letter-spacing="0.1em">CORE</text>
-                  
-                  <!-- Node 1: Hydration -->
-                  <circle cx="200" cy="80" r="32" fill="#EBF3FC" stroke="#4A90E2" stroke-width="2" />
-                  <text x="200" y="84" font-family="Inter" font-size="10" font-weight="700" fill="#1C3D5A" text-anchor="middle">Hydration</text>
-                  
-                  <!-- Node 2: Weight -->
-                  <circle cx="80" cy="280" r="32" fill="#F4F8EC" stroke="var(--color-eucalyptus)" stroke-width="2" />
-                  <text x="80" y="284" font-family="Inter" font-size="10" font-weight="700" fill="#2E4A1E" text-anchor="middle">Weight</text>
-                  
-                  <!-- Node 3: Blood Pressure -->
-                  <circle cx="320" cy="280" r="32" fill="#FDF3F2" stroke="var(--color-terracotta)" stroke-width="2" />
-                  <text x="320" y="284" font-family="Inter" font-size="10" font-weight="700" fill="var(--color-terracotta)" text-anchor="middle">Blood Pressure</text>
-                </svg>
-              </div>
+<section class="blood-network-section">
+  <div class="container network-container">
+    
+    <!-- LEFT COLUMN: Copy & Features -->
+    <div class="network-content">
+      <div class="pill-badge-rose">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Aura Pulse
+      </div>
+      <h2 class="network-title">Seconds Count.<br><span>Lifesaving, Linked.</span></h2>
+      <p class="network-desc">A secure, real-time lifeline embedded directly within Aura. Instantly bridge the gap between those who need blood and those ready to give it.</p>
+      
+      <ul class="network-feature-list">
+        <li>
+          <div class="icon-box-rose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <span><strong>Smart Group Sniffer</strong> — Match by compatibility, active verification status, and geographical zones.</span>
+        </li>
+        <li>
+          <div class="icon-box-rose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <span><strong>Real-Time Pings</strong> — Coordinate securely within the app without sharing personal contact details.</span>
+        </li>
+        <li>
+          <div class="icon-box-rose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <span><strong>Rest & Rebuild Tracker</strong> — Track donation history automatically and know exactly when you're eligible again.</span>
+        </li>
+      </ul>
+      
+      <div class="network-cta-row">
+        <button class="btn-primary-rose">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          Become a Life Donor
+        </button>
+        <button class="btn-secondary-rose">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search for Donors
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: UI Card Mockup -->
+    <div class="network-visual">
+      <div class="mock-ui-card">
+        <div class="mock-card-header">
+          <h3>Pulse Impact Board</h3>
+          <p>Real-time community matches</p>
+        </div>
+        <div class="mock-card-body">
+          <div class="mock-impact-stat">
+            <span class="impact-number">142</span>
+            <div class="impact-label">
+              <strong>Lives Connected</strong>
+              <span>This week in your region</span>
             </div>
           </div>
-        </section>
+          
+          <div class="mock-list-item">
+            <div class="mock-avatar">O-</div>
+            <div class="mock-info">
+              <h4>Marcus G.</h4>
+              <p>Matched & donated · 1.4 km</p>
+            </div>
+            <div class="mock-badge badge-red">Hero</div>
+          </div>
+          
+          <div class="mock-list-item">
+            <div class="mock-avatar">A+</div>
+            <div class="mock-info">
+              <h4>Sarah L.</h4>
+              <p>Ready to give · Active now</p>
+            </div>
+            <div class="mock-badge badge-green">Ready</div>
+          </div>
+          
+          <div class="mock-list-item">
+            <div class="mock-avatar">AB-</div>
+            <div class="mock-info">
+              <h4>David K.</h4>
+              <p>Scheduled donation · 2.1 km</p>
+            </div>
+            <div class="mock-badge badge-purple">Matched</div>
+          </div>
+          
+          <div class="mock-footer-quote">
+            “Your blood type is someone's hope.”
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
     </main>
 
-    <footer class="site-footer">
-  <nav class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="#" onclick="alert('Contact us at team.aurahealth@gmail.com')">Contact Team</a>
-  </nav>
-  <p>© 2026 Aura Health</p>
+<section class="vision-mission-section">
+  <div class="container vm-container">
+    
+    <!-- VISION CARD -->
+    <div class="vm-card">
+      <div class="pill-badge badge-blue">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        OUR VISION
+      </div>
+      <h3 class="vm-title">Transforming personal health into actionable clarity.</h3>
+      <p class="vm-desc">We envision a future where everyone has total ownership and understanding of their well-being. By translating complex health metrics into simple, intuitive insights, we are building a world where proactive wellness is universally accessible and seamlessly integrated into daily life.</p>
+    </div>
+
+    <!-- MISSION CARD -->
+    <div class="vm-card">
+      <div class="pill-badge badge-green">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        OUR MISSION
+      </div>
+      <h3 class="vm-title">Engineering the ultimate companion for your wellness journey.</h3>
+      <p class="vm-desc">Our mission is to eliminate the friction of traditional health tracking. We are dedicated to delivering precision digital tools that empower you to monitor vital signs, visualize long-term trends, and share secure reports with your medical providers—all through an uncompromising, elegant user experience.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-container">
+    <div class="footer-cta">
+      <h2>Ready to master your vitals?</h2>
+      <a href="#hero" class="footer-btn">Download Now</a>
+    </div>
+    <nav class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#" onclick="alert('Contact us at team.aurahealth@gmail.com')">Contact Team</a>
+    </nav>
+    <p class="copyright">© 2026 Aura Health</p>
+  </div>
 </footer>
 
 </body>
